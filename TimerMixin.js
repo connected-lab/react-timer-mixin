@@ -9,7 +9,7 @@
  */
 'use strict';
 
-var GLOBAL = typeof window === 'undefined' ? global : window;
+var GLOBAL = typeof global === 'undefined' ? window : global;
 
 var setter = function(_setter, _clearer, array) {
   return function(callback, delta) {
